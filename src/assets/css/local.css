@@ -78,6 +78,7 @@
   }
   #sbs-1362 .cs-item {
     list-style: none;
+    height: 100%;
     /* 16px - 24px */
     padding: clamp(1rem, 3vw, 1.5rem);
     /* prevents padding from affecting height and width */

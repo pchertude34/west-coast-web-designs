@@ -5,9 +5,9 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #D5A021;
+    --primary: #d5a021;
     --primaryLight: #ffd675;
-    --secondary: #133C55;
+    --secondary: #133c55;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -24,8 +24,20 @@
   .color-primary {
     color: var(--primary);
   }
+  .color-primary-light {
+    color: var(--primaryLight);
+  }
+  .color-secondary {
+    color: var(--secondary);
+  }
   .color-gray {
     color: var(--gray);
+  }
+  .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: "100%";
   }
   .cs-topper {
     display: block;
@@ -1170,6 +1182,55 @@ html {
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cta:after {
     display: none;
+  }
+}
+/*-- -------------------------- -->
+<---           List           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-824 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+@media only screen and (min-width: 0rem) {
+  #list-824 {
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
+    row-gap: 1.5rem !important;
+  }
+  #list-824 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+  }
+  #list-824 .cs-li-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #list-824 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #list-824 .cs-icon {
+    width: 1.0625rem;
+    height: auto;
+    margin-top: 0.25rem;
+  }
+  #list-824 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
   }
 }
 /*-- -------------------------- -->
