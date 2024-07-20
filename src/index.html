@@ -9,54 +9,60 @@ eleventyNavigation:
   order: 100
 ---
 
-{% extends "layouts/base.html" %} {% block head %}
-<link rel="stylesheet" href="/assets/css/local.css" />
-<link rel="stylesheet" href="/assets/css/critical.css" />
+{% extends "layouts/base.html" %}
+{% block head %}
+  <link rel="stylesheet" href="/assets/css/local.css"/>
+  <link rel="stylesheet" href="/assets/css/critical.css"/>
 
-<!-- Script for Netlify Identity -->
-<script
+  <!-- Script for Netlify Identity -->
+  <script
   defer
   src="https://identity.netlify.com/v1/netlify-identity-widget.js"
 ></script>
-<script defer>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+  <script defer>
+    if (window.netlifyIdentity) {
+      window
+        .netlifyIdentity
+        .on("init", (user) => {
+          if (!user) {
+            window
+              .netlifyIdentity
+              .on("login", () => {
+                document.location.href = "/admin/";
+              });
+          }
         });
-      }
-    });
-  }
-</script>
-{% endblock %} {% block body %}
+    }
+  </script>
+{% endblock %}
+{% block body %}
 
-<!-- ============================================ -->
-<!--                    Hero                      -->
-<!-- ============================================ -->
+  <!-- ============================================ -->
+  <!--                    Hero                      -->
+  <!-- ============================================ -->
 
-<section id="hero-855">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Professional Web Designers</span>
-      <h1 class="cs-title">Crafting Custom Websites for Your Success</h1>
-      <p class="cs-text">
+  <section id="hero-855">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Professional Web Designers</span>
+        <h1 class="cs-title">Crafting Custom Websites for Your Success</h1>
+        <p class="cs-text">
         Empowering small businesses with hand-coded websites for just
         <span class="color-primary">$100 a month</span>
-      </p>
-      <a href="" class="cs-button-solid">Get in touch!</a>
-    </div>
-    <img
+        </p>
+        <a href="" class="cs-button-solid">Get in touch!</a>
+      </div>
+      <img
       aria-hidden="true"
       decoding="async"
       src="/assets/images/undraw_building_websites_i78t.svg"
       alt="web design"
       width="570"
       height="701"
-    />
-  </div>
-  <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-  <svg
+/>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+    <svg
     class="cs-wave"
     width="1920"
     height="179"
@@ -64,200 +70,201 @@ eleventyNavigation:
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
+      <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z"
       fill="white"
-    />
-  </svg>
-</section>
+/>
+    </svg>
+  </section>
 
-<!-- ============================================ -->
-<!--                  Services                    -->
-<!-- ============================================ -->
+  <!-- ============================================ -->
+  <!--                  Services                    -->
+  <!-- ============================================ -->
 
-<section id="services-1176">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Our approach</span>
-      <h2 class="cs-title">What We Offer</h2>
-      <p class="cs-text">
+  <section id="services-1176">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Our approach</span>
+        <h2 class="cs-title">What We Offer</h2>
+        <p class="cs-text">
         At West Coast Web Designs, we create custom, hand-coded websites for
         small businesses. Our highly responsive and optimized sites are tailored
         to attract more customers and boost your revenue, ensuring your business
         stands out in the digital landscape.
       </p>
-    </div>
-    <ul class="cs-card-group">
-      <li class="cs-item">
-        <picture class="cs-picture">
-          <span style="font-size: 72px" class="color-gray">
-            <i class="fa-solid fa-compass-drafting"></i>
-          </span>
-        </picture>
-        <h3 class="cs-h3">Custom Web Design</h3>
-        <p class="cs-item-text">
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <span style="font-size: 72px" class="color-gray">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </span>
+          </picture>
+          <h3 class="cs-h3">Custom Web Design</h3>
+          <p class="cs-item-text">
           Crafting hand-coded, custom websites that reflect your brand and
           attract customers with responsive designs.
         </p>
-      </li>
-      <li class="cs-item">
-        <picture class="cs-picture">
-          <span style="font-size: 72px" class="color-gray">
-            <i class="fa-solid fa-gauge"></i>
-          </span>
-        </picture>
-        <h3 class="cs-h3">Website Optimization</h3>
-        <p class="cs-item-text">
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <span style="font-size: 72px" class="color-gray">
+              <i class="fa-solid fa-gauge"></i>
+            </span>
+          </picture>
+          <h3 class="cs-h3">Website Optimization</h3>
+          <p class="cs-item-text">
           Optimizing your site for peak performance and improved search rankings
           through comprehensive SEO and speed enhancements.
         </p>
-      </li>
-      <li class="cs-item">
-        <picture class="cs-picture">
-          <span style="font-size: 72px" class="color-gray">
-            <i class="fa-solid fa-gears"></i>
-          </span>
-        </picture>
-        <h3 class="cs-h3">Ongoing Maintenance</h3>
-        <p class="cs-item-text">
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <span style="font-size: 72px" class="color-gray">
+              <i class="fa-solid fa-gears"></i>
+            </span>
+          </picture>
+          <h3 class="cs-h3">Ongoing Maintenance</h3>
+          <p class="cs-item-text">
           Affordable monthly maintenance plans at $100, ensuring your website
           stays secure, updated, and running smoothly.
         </p>
-      </li>
-    </ul>
-  </div>
-</section>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<!-- ============================================ -->
-<!--                Side By Side                  -->
-<!-- ============================================ -->
+  <!-- ============================================ -->
+  <!--                Side By Side                  -->
+  <!-- ============================================ -->
 
-<section id="sbs-1362">
-  <div class="cs-container">
-    <div class="center-image">
-      <img
+  <section id="sbs-1362">
+    <div class="cs-container">
+      <div class="center-image">
+        <img
         loading="lazy"
         decoding="async"
         src="/assets/images/undraw_heatmap_uyye.svg"
         alt="people"
         width="100%"
         height="auto"
-      />
-    </div>
-    <div class="cs-content">
-      <span class="cs-topper">Why choose us</span>
-      <h2 class="cs-title">Why West Coast Web Designs is Your Best Choice</h2>
-      <p class="cs-text">
+/>
+      </div>
+      <div class="cs-content">
+        <span class="cs-topper">Why choose us</span>
+        <h2 class="cs-title">Why West Coast Web Designs is Your Best Choice</h2>
+        <p class="cs-text">
         Experience unparalleled craftsmanship with hand-coded, custom websites
         designed to boost your business. Enjoy unlimited edits, 24/7 support,
         and an affordable payment plan starting at $0 down and $100 a month.
       </p>
-      <ul class="cs-card-group">
-        <li class="cs-item">
-          <h3 class="cs-h3">
-            <span class="color-primary">
-              <i class="fa-solid fa-coins fa-xl"></i>
-            </span>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <h3 class="cs-h3">
+              <span class="color-primary">
+                <i class="fa-solid fa-coins fa-xl"></i>
+              </span>
             $0 Down, $100/Month
           </h3>
-          <p class="cs-item-text">
+            <p class="cs-item-text">
             OAffordable monthly plans starting at $100, with no upfront costs.
             12 month minimum contract, cancel any time after.
           </p>
-        </li>
-        <li class="cs-item">
-          <h3 class="cs-h3">
-            <span class="color-primary">
-              <i class="fa-solid fa-file-pen fa-xl"></i>
-            </span>
+          </li>
+          <li class="cs-item">
+            <h3 class="cs-h3">
+              <span class="color-primary">
+                <i class="fa-solid fa-file-pen fa-xl"></i>
+              </span>
             Unlimited Edits
           </h3>
-          <p class="cs-item-text">
+            <p class="cs-item-text">
             Unlimited edits to your website, ensuring it is always up to date
             and reflects your brand.
           </p>
-        </li>
-      </ul>
+          </li>
+        </ul>
 
-      <ul id="list-824" class="cs-ul">
-        <li class="cs-li">
-          <span class="color-secondary">
-            <i class="fa-solid fa-circle-check fa-lg"></i>
-          </span>
-          <div class="cs-li-content">
-            <h3 class="cs-h3">Website Hosting</h3>
-            <p class="cs-item-text">
+        <ul id="list-824" class="cs-ul">
+          <li class="cs-li">
+            <span class="color-secondary">
+              <i class="fa-solid fa-circle-check fa-lg"></i>
+            </span>
+            <div class="cs-li-content">
+              <h3 class="cs-h3">Website Hosting</h3>
+              <p class="cs-item-text">
               Reliable and secure hosting included with all our website
               packages.
             </p>
-          </div>
-        </li>
-        <li class="cs-li">
-          <span class="color-secondary">
-            <i class="fa-solid fa-circle-check fa-lg"></i>
-          </span>
-          <div class="cs-li-content">
-            <h3 class="cs-h3">Google Analytics</h3>
-            <p class="cs-item-text">
+            </div>
+          </li>
+          <li class="cs-li">
+            <span class="color-secondary">
+              <i class="fa-solid fa-circle-check fa-lg"></i>
+            </span>
+            <div class="cs-li-content">
+              <h3 class="cs-h3">Google Analytics</h3>
+              <p class="cs-item-text">
               Detailed insights and analytics to track your website’s
               performance.
             </p>
-          </div>
-        </li>
-        <li class="cs-li">
-          <span class="color-secondary">
-            <i class="fa-solid fa-circle-check fa-lg"></i>
-          </span>
-          <div class="cs-li-content">
-            <h3 class="cs-h3">24/7 Customer Service</h3>
-            <p class="cs-item-text">
+            </div>
+          </li>
+          <li class="cs-li">
+            <span class="color-secondary">
+              <i class="fa-solid fa-circle-check fa-lg"></i>
+            </span>
+            <div class="cs-li-content">
+              <h3 class="cs-h3">24/7 Customer Service</h3>
+              <p class="cs-item-text">
               Round-the-clock support to assist you whenever needed.
             </p>
-          </div>
-        </li>
-        <li class="cs-li">
-          <span class="color-secondary">
-            <i class="fa-solid fa-circle-check fa-lg"></i>
-          </span>
-          <div class="cs-li-content">
-            <h3 class="cs-h3">Standard 5-Page Websites</h3>
-            <p class="cs-item-text">
+            </div>
+          </li>
+          <li class="cs-li">
+            <span class="color-secondary">
+              <i class="fa-solid fa-circle-check fa-lg"></i>
+            </span>
+            <div class="cs-li-content">
+              <h3 class="cs-h3">Standard 5-Page Websites</h3>
+              <p class="cs-item-text">
               Professionally designed 5-page websites, with options to add more
               pages as needed.
             </p>
-          </div>
-        </li>
-      </ul>
-      <a href="" class="cs-button-solid">Discover More</a>
+            </div>
+          </li>
+        </ul>
+        <a href="" class="cs-button-solid">Discover More</a>
+      </div>
+      <div class="cs-bubbles"></div>
     </div>
-  </div>
 
-  <!-- <div class="cs-bubbles" aria-hidden="true"></div> -->
-</section>
+    <!-- <div class="cs-bubbles" aria-hidden="true"></div> -->
+  </section>
 
-<!-- ============================================ -->
-<!--                Portfolio                     -->
-<!-- ============================================ -->
-<section id="portfolio-420">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">Examples</span>
-      <h2 class="cs-title">Our Portfolio</h2>
-    </div>
-    <ul class="cs-card-group">
-      <li class="cs-item">
-        <picture class="cs-picture">
-          <source
+  <!-- ============================================ -->
+  <!--                Portfolio                     -->
+  <!-- ============================================ -->
+  <section id="portfolio-420">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Examples</span>
+        <h2 class="cs-title">Our Portfolio</h2>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <source
             media="(max-width: 600px)"
             srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
+/>
+            <source
             media="(min-width: 601px)"
             srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
+/>
+            <img
             aria-hidden="true"
             decoding="async"
             src="/assets/images/cabinets2.jpg"
@@ -265,26 +272,26 @@ eleventyNavigation:
             loading="eager"
             width="100%"
             height="auto"
-          />
-        </picture>
-        <h3 class="cs-h3">Custom Web Design</h3>
-        <p class="cs-item-text">
+/>
+          </picture>
+          <h3 class="cs-h3">Custom Web Design</h3>
+          <p class="cs-item-text">
           Crafting hand-coded, custom websites that reflect your brand and
           attract customers with responsive designs.
         </p>
-        <a href="" class="cs-button-solid">Read More</a>
-      </li>
-      <li class="cs-item">
-        <picture class="cs-picture">
-          <source
+          <a href="" class="cs-button-solid">Read More</a>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <source
             media="(max-width: 600px)"
             srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
+/>
+            <source
             media="(min-width: 601px)"
             srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
+/>
+            <img
             aria-hidden="true"
             decoding="async"
             src="/assets/images/cabinets2.jpg"
@@ -292,26 +299,26 @@ eleventyNavigation:
             loading="eager"
             width="100%"
             height="auto"
-          />
-        </picture>
-        <h3 class="cs-h3">Website Optimization</h3>
-        <p class="cs-item-text">
+/>
+          </picture>
+          <h3 class="cs-h3">Website Optimization</h3>
+          <p class="cs-item-text">
           Optimizing your site for peak performance and improved search rankings
           through comprehensive SEO and speed enhancements.
         </p>
-        <a href="" class="cs-button-solid">Read More</a>
-      </li>
-      <li class="cs-item">
-        <picture class="cs-picture">
-          <source
+          <a href="" class="cs-button-solid">Read More</a>
+        </li>
+        <li class="cs-item">
+          <picture class="cs-picture">
+            <source
             media="(max-width: 600px)"
             srcset="/assets/images/cabinets2-m.jpg"
-          />
-          <source
+/>
+            <source
             media="(min-width: 601px)"
             srcset="/assets/images/cabinets2.jpg"
-          />
-          <img
+/>
+            <img
             aria-hidden="true"
             decoding="async"
             src="/assets/images/cabinets2.jpg"
@@ -319,17 +326,71 @@ eleventyNavigation:
             loading="eager"
             width="100%"
             height="auto"
-          />
-        </picture>
-        <h3 class="cs-h3">Ongoing Maintenance</h3>
-        <p class="cs-item-text">
+/>
+          </picture>
+          <h3 class="cs-h3">Ongoing Maintenance</h3>
+          <p class="cs-item-text">
           Affordable monthly maintenance plans at $100, ensuring your website
           stays secure, updated, and running smoothly.
         </p>
-        <a href="" class="cs-button-solid">Read More</a>
-      </li>
-    </ul>
-  </div>
-</section>
+          <a href="" class="cs-button-solid">Read More</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-{% include 'components/cta.html' %} {% endblock %}
+  <!-- ============================================ -->
+  <!--                Meet the Team                 -->
+  <!-- ============================================ -->
+
+  <section id="meet-team-1367">
+    <div class="cs-container">
+      <div class="cs-content">
+        <span class="cs-topper">Our Team</span>
+        <h2 class="cs-title">Our Expert Team Members</h2>
+        <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis quam eu elit lobortis ultrices. Nulla ut accumsan lorem, sed molestie justo. Praesent vehicula eleifend.
+            </p>
+      </div>
+      <ul class="cs-card-group">
+        <li class="cs-item">
+          <div class="cs-picture-wrapper">
+            <picture class="cs-picture">
+              <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/agency-worker-3.png">
+              <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/agency-worker-3.png">
+              <img decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/agency-worker-3.png"
+                                alt="person" width="413" height="374" aria-hidden="true">
+            </picture>
+          </div>
+          <div class="cs-info">
+            <span class="cs-name">Jenny Wilson</span>
+            <span class="cs-job">UI/UX Designer</span>
+          </div>
+        </li>
+        <li class="cs-item">
+          <div class="cs-picture-wrapper">
+            <picture class="cs-picture">
+              <source media="(max-width: 600px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/agency-worker-3.png">
+              <source media="(min-width: 601px)"
+                                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/agency-worker-3.png">
+              <img decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/agency-worker-3.png"
+                                alt="person" width="413" height="374" aria-hidden="true">
+            </picture>
+          </div>
+          <div class="cs-info">
+            <span class="cs-name">Jenny Wilson</span>
+            <span class="cs-job">UI/UX Designer</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+  </section>
+
+  {% include 'components/cta.html' %}
+{% endblock %}
