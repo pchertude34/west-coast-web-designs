@@ -54,7 +54,7 @@
     align-items: flex-start;
   }
   #sbs-1362 .cs-topper {
-    color: var(--primary);
+    color: var(--secondary);
   }
   #sbs-1362 .cs-title {
     /* 23 characters wide including spaces */
@@ -83,7 +83,7 @@
     padding: clamp(1rem, 3vw, 1.5rem);
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    background-color: #f7f7f7;
+    background-color: var(--grayLight);
     border-radius: 1rem;
     border: 1px solid #e8e8e8;
     display: flex;
@@ -148,7 +148,7 @@
     font-weight: 700;
     overflow: hidden;
     margin: 0;
-    color: #fff;
+    color: var(--grayDark);
     padding: 0 3rem;
     border-radius: 1.875rem;
     background-color: var(--primary);
@@ -163,7 +163,7 @@
     display: block;
     height: 100%;
     width: 0%;
-    background: #1a1a1a;
+    background: var(--grayDark);
     opacity: 1;
     top: 0;
     left: 0;
@@ -693,6 +693,175 @@
   }
   body.dark-mode #reviews .cs-desc {
     color: var(--primaryLight);
+  }
+}
+/*-- -------------------------- -->
+<---          Portfolio         -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+  #portfolio-420 {
+    padding: var(--sectionPadding);
+  }
+  #portfolio-420 .cs-container {
+    max-width: 34.375rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #portfolio-420 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+  }
+  #portfolio-420 .cs-card-group {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
+  }
+  #portfolio-420 .cs-button-solid {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    overflow: hidden;
+    margin: 0;
+    color: var(--grayDark);
+    border-radius: 1.875rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+  #portfolio-420 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: var(--grayDark);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #portfolio-420 .cs-button-solid:hover {
+    color: var(--bodyTextColorWhite);
+  }
+  #portfolio-420 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #portfolio-420 .cs-item {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s;
+    text-align: left;
+    grid-column: span 12;
+    grid-row: span 1;
+    box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, 0.1);
+  }
+  #portfolio-420 .cs-item:hover {
+    transform: translateY(-0.5rem);
+  }
+  #portfolio-420 .cs-item:hover .cs-h3,
+  #portfolio-420 .cs-item:hover .cs-link {
+    color: var(--primary);
+  }
+  #portfolio-420 .cs-item:hover .cs-arrow {
+    filter: initial;
+  }
+  #portfolio-420 .cs-picture {
+    height: auto;
+    margin: 0.5rem 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #portfolio-420 .cs-icon {
+    width: 4.5rem;
+    height: auto;
+  }
+  #portfolio-420 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+    transition: color 0.3s;
+    text-align: inherit;
+  }
+  #portfolio-420 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    margin-bottom: 1.25rem;
+    padding: 0;
+    text-align: left;
+    color: var(--bodyTextColor);
+  }
+  #portfolio-420 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-top: auto;
+    color: var(--headerColor);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: color 0.3s;
+    text-align: inherit;
+  }
+  #portfolio-420 .cs-link:hover .cs-arrow {
+    transform: translateX(0.25rem);
+  }
+  #portfolio-420 .cs-arrow {
+    width: 1.25rem;
+    height: auto;
+    display: block;
+    filter: grayscale(1) brightness(0);
+    transition: filter 0.3s, transform 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #portfolio-420 .cs-container {
+    max-width: 80rem;
+  }
+  #portfolio-420 .cs-item {
+    grid-column: span 4;
   }
 }
 
