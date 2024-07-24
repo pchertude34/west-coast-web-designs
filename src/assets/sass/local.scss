@@ -175,7 +175,7 @@
       transition: color 0.3s;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         display: block;
         height: 100%;
@@ -247,7 +247,7 @@
 
       &:before {
         /* white border bubble */
-        content: "";
+        content: '';
         width: calc(330 / 16 * 1em);
         height: calc(330 / 16 * 1em);
         background: transparent;
@@ -267,7 +267,7 @@
 
       &:after {
         /* orange bubble */
-        content: "";
+        content: '';
         width: calc(260 / 16 * 1em);
         height: calc(260 / 16 * 1em);
         background: var(--primary);
@@ -375,7 +375,7 @@
       transition: color 0.3s;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         display: block;
         height: 100%;
@@ -668,7 +668,7 @@
 
       &:before {
         /* white border bubble */
-        content: "";
+        content: '';
         width: calc(294 / 16 * 1rem);
         height: calc(294 / 16 * 1rem);
         background: transparent;
@@ -688,7 +688,7 @@
 
       &:after {
         /* orange bubble */
-        content: "";
+        content: '';
         width: calc(294 / 16 * 1rem);
         height: calc(294 / 16 * 1rem);
         background: var(--secondary);
@@ -811,12 +811,17 @@
       width: 100%;
       max-width: calc(586 / 16 * 1rem);
       /* Changes to auto at desktop */
-      height: calc(520 / 16 * 1rem);
+      height: 100%;
       /* 32px - 48px */
-      border-radius: clamp(2rem, 4vw, 3rem);
+      border-radius: 1rem;
       /* clips the corners of the children around the border radius */
       overflow: hidden;
       position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      order: 2;
     }
 
     .cs-picture {
@@ -825,6 +830,8 @@
       border-radius: 50%;
       /* clips img tag corners */
       overflow: hidden;
+      height: 8rem;
+      width: 8rem;
       img {
         position: absolute;
         top: 0;
@@ -857,36 +864,21 @@
     .cs-picture-info {
       text-align: center;
       /* 16px - 24px */
-      padding: 1rem;
-      background-color: #f7f7f7;
-      border-radius: calc(24 / 16 * 1rem);
+      padding: 0.5rem;
+      border-radius: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background-color: var(--grayLight);
       /* makes the info boxes grow when the items aren't matching heights */
       flex-grow: 1;
-      transition: background-color 0.3s;
     }
 
-    .cs-picture-1-item {
+    .cs-picture-item {
       display: flex;
       flex-direction: column;
-      padding: 3rem;
-    }
-
-    .cs-picture1 {
-      top: 0;
-      left: 0;
-      height: 12rem;
-      width: 12rem;
-    }
-
-    .cs-picture2 {
-      bottom: 0;
-      right: 0;
-      height: 12rem;
-      width: 12rem;
-      margin-left: auto;
+      align-items: center;
+      padding: 1rem;
     }
 
     .cs-bubbles {
@@ -902,7 +894,7 @@
 
       &:before {
         /* white border bubble */
-        content: "";
+        content: '';
         width: calc(330 / 16 * 1em);
         height: calc(330 / 16 * 1em);
         background: transparent;
@@ -922,7 +914,7 @@
 
       &:after {
         /* orange bubble */
-        content: "";
+        content: '';
         width: calc(260 / 16 * 1em);
         height: calc(260 / 16 * 1em);
         background: var(--primary);
@@ -940,6 +932,15 @@
         animation-iteration-count: infinite;
       }
     }
+
+    .cs-stripes {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: absolute;
+      z-index: -1;
+    }
   }
 }
 
@@ -956,7 +957,13 @@
     .cs-image-group {
       height: auto;
       /* sends it to the right in the 2nd position */
+      align-items: center;
       order: 2;
+    }
+
+    .cs-picture {
+      height: 12rem;
+      width: 12rem;
     }
 
     .cs-bubbles {
