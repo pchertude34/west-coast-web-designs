@@ -29,7 +29,6 @@
   #sbs-1362 {
     padding: var(--sectionPadding);
     position: relative;
-    overflow: hidden;
     z-index: 1;
   }
   #sbs-1362 .cs-container {
@@ -672,7 +671,6 @@
   #sbsr-1363 {
     padding: var(--sectionPadding);
     position: relative;
-    overflow: hidden;
     z-index: 1;
   }
   #sbsr-1363 .cs-container {
