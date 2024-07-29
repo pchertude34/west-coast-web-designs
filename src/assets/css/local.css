@@ -712,8 +712,6 @@
     max-width: 36.625rem;
     /* Changes to auto at desktop */
     height: 100%;
-    /* 32px - 48px */
-    border-radius: 1rem;
     /* clips the corners of the children around the border radius */
     overflow: hidden;
     position: relative;
@@ -762,7 +760,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--grayLight);
+    background-color: #fff;
+    border: 1px solid var(--grayLight);
     /* makes the info boxes grow when the items aren't matching heights */
     flex-grow: 1;
   }
@@ -862,5 +861,216 @@
     right: 50%;
   }
 }
+/*-- -------------------------- -->
+<---   Pricing                  -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #pricing .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #pricing .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #pricing .cs-picture {
+    width: 4.75rem;
+    height: 4.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    color: var(--primary);
+    font-size: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #pricing .cs-picture:before {
+    /* background color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  #pricing .pricing-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #pricing .pricing-card {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    background-color: var(--grayDark);
+    border-radius: 1rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+  }
+  #pricing .pricing-card .pricing-card-title,
+  #pricing .pricing-card .pricing-card-price,
+  #pricing .pricing-card .pricing-card-price-duration,
+  #pricing .pricing-card .pricing-card-price-description,
+  #pricing .pricing-card .pricing-card-feature {
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing .pricing-card-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--headerColor);
+  }
+  #pricing .pricing-card-price {
+    font-size: 2.4375rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 900;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #pricing .pricing-card-price-duration {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #pricing .pricing-card-price-description {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0 0 2rem;
+    color: var(--bodyTextColor);
+  }
+  #pricing .pricing-card-feature-list {
+    margin: 0 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #pricing .pricing-card-feature {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    /* push everything to the top so if the li goes to two lines the icon stays at the top */
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #pricing .cs-icon {
+    font-size: 18px;
+    height: auto;
+    display: block;
+    color: var(--primary);
+  }
+  #pricing .cs-button {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--primary);
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+  }
+  #pricing .cs-button:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--primary);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #pricing .cs-button:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  #pricing .cs-button:hover:before {
+    width: 100%;
+  }
+  #pricing .cs-topper {
+    color: var(--secondary);
+  }
+  #pricing .cs-title {
+    /* 23 characters wide including spaces */
+    max-width: 26ch;
+  }
+  #pricing .cs-text {
+    margin-bottom: 1rem;
+  }
+  #pricing .cs-text:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+/* Large Desktop 1600px */
 
 /*# sourceMappingURL=local.css.map */
