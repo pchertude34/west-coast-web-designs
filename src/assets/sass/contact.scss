@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
   #contact-1392 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    background-color: var(--grayLight);
     position: relative;
     z-index: 10;
 
@@ -195,7 +195,7 @@
       transition: color 0.3s;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         display: block;
         height: 100%;

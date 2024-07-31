@@ -143,6 +143,7 @@
   }
   body {
     transition: background-color 0.3s;
+    background-color: var(--grayLight);
   }
   .container {
     position: relative;

@@ -212,7 +212,7 @@
     box-sizing: border-box;
     padding: 1.5rem;
     padding-bottom: 2rem;
-    background-color: var(--grayLight);
+    background-color: #fff;
     border-radius: 1rem;
     border: 1px solid #e8e8e8;
     display: flex;
