@@ -1055,6 +1055,7 @@
       padding: calc(24 / 16 * 1rem) calc(24 / 16 * 1rem);
       background-color: var(--grayDark);
       border-radius: 1rem;
+      border: 2px solid var(--primary);
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
       display: flex;
@@ -1177,7 +1178,7 @@
       }
 
       &:hover {
-        color: #fff;
+        color: var(--grayDark);
         background-color: #000;
         &:before {
           width: 100%;

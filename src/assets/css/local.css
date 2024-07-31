@@ -930,6 +930,7 @@
     padding: 1.5rem 1.5rem;
     background-color: var(--grayDark);
     border-radius: 1rem;
+    border: 2px solid var(--primary);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -1042,7 +1043,7 @@
     transition: width 0.3s;
   }
   #pricing .cs-button:hover {
-    color: #fff;
+    color: var(--grayDark);
     background-color: #000;
   }
   #pricing .cs-button:hover:before {
