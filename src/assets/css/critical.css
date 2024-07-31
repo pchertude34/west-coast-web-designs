@@ -8,7 +8,8 @@
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
     padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
-    background-color: var(--secondary);
+    background: rgb(30, 84, 117);
+    background: linear-gradient(145deg, rgb(30, 84, 117) 0%, rgb(19, 60, 85) 52%);
     /* clips the svg wave from overflowing */
     overflow: hidden;
     position: relative;
