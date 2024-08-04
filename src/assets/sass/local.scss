@@ -95,7 +95,7 @@
       box-sizing: border-box;
       background-color: #fff;
       border-radius: calc(16 / 16 * 1rem);
-      border: 1px solid #e8e8e8;
+      border: 1px solid var(--gray);
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -406,7 +406,7 @@
       padding-bottom: calc(32 / 16 * 1rem);
       background-color: #fff;
       border-radius: calc(16 / 16 * 1rem);
-      border: 1px solid #e8e8e8;
+      border: 1px solid var(--gray);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -782,7 +782,7 @@
 
     .cs-content {
       /* set text align to left if content needs to be left aligned */
-      text-align: left;
+      text-align: center;
       width: 100%;
       max-width: calc(630 / 16 * 1rem);
       display: flex;
@@ -941,9 +941,9 @@
   #sbsr-1363 {
     .cs-container {
       max-width: calc(1280 / 16 * 1rem);
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
+      flex-direction: column;
+      // justify-content: space-between;
+      align-items: center;
     }
 
     .cs-image-group {

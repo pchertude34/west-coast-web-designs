@@ -84,7 +84,7 @@
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 1rem;
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--gray);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -361,7 +361,7 @@
     padding-bottom: 2rem;
     background-color: #fff;
     border-radius: 1rem;
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--gray);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -686,7 +686,7 @@
   }
   #sbsr-1363 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 39.375rem;
     display: flex;
@@ -829,9 +829,8 @@
 @media only screen and (min-width: 64rem) {
   #sbsr-1363 .cs-container {
     max-width: 80rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: center;
   }
   #sbsr-1363 .cs-image-group {
     height: auto;
