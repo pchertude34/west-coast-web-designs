@@ -55,9 +55,6 @@
     box-sizing: border-box;
     transition: border-bottom 0.3s;
   }
-  #faq-1263 .cs-faq-item.active .cs-button {
-    color: var(--secondary);
-  }
   #faq-1263 .cs-faq-item.active .cs-button:before {
     background-color: var(--secondary);
     transform: rotate(315deg);

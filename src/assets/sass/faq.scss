@@ -62,7 +62,6 @@
 
       &.active {
         .cs-button {
-          color: var(--secondary);
           &:before {
             background-color: var(--secondary);
             transform: rotate(315deg);
