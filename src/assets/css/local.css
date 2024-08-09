@@ -695,13 +695,16 @@
     align-items: flex-start;
   }
   #sbsr-1363 .cs-topper {
+    width: 100%;
     color: var(--secondary);
   }
   #sbsr-1363 .cs-title {
     /* 23 characters wide including spaces */
     max-width: 26ch;
+    width: 100%;
   }
   #sbsr-1363 .cs-text {
+    text-align: left;
     margin-bottom: 1rem;
   }
   #sbsr-1363 .cs-text:last-of-type {

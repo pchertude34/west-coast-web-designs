@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: '100%';
+    height: "100%";
   }
 
   // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
@@ -122,7 +122,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      content: '';
+      content: "";
       opacity: 1;
       display: block;
       background-color: #000;
@@ -157,7 +157,7 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 100%;
     color: var(--bodyTextColor);
   }
@@ -224,32 +224,35 @@
   /* roboto-regular - latin */
   @font-face {
     font-style: normal;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 400;
     font-display: swap;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-regular.woff')
-        format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-700 - latin */
   @font-face {
     font-style: normal;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 700;
     font-display: swap;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-700.woff')
-        format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-900 - latin */
   @font-face {
     font-style: normal;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-weight: 900;
     font-display: swap;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'),
-      /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-900.woff')
-        format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""),
+      url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 }
 
@@ -490,7 +493,7 @@ html {
 
     &:before {
       /* on scroll background */
-      content: '';
+      content: "";
       width: 100%;
       height: 0%;
       background: #fff;
@@ -533,7 +536,7 @@ html {
 
       &:before {
         /* divider line */
-        content: '';
+        content: "";
         width: 100%;
         height: 1px;
         background: #fff;
@@ -652,7 +655,7 @@ html {
 
       &:before {
         /* floating bubble when opened */
-        content: '';
+        content: "";
         width: 70%;
         height: 70%;
         opacity: 0;
@@ -674,7 +677,7 @@ html {
 
       &:after {
         /* floating bubble when opened */
-        content: '';
+        content: "";
         width: 50%;
         height: 50%;
         opacity: 0;
@@ -873,14 +876,14 @@ html {
   body.scroll {
     #cs-navigation {
       /* translate the whole navigation UP by the exact same height as the cs-top-bar (86px) so we can get that off screen and not have a tall clunky navbar. Then we translate the cs-logo DOWN so it lowers itself to be positioned centered in the cs-container, when it's not. It's just an illusion we create */
-      transform: translateY(-5.375rem);
+      transform: translateY(-7rem);
 
       &:before {
         height: 100%;
       }
 
       .cs-logo {
-        transform: translateY(5rem);
+        transform: translateY(6.25rem);
       }
 
       .cs-top-bar {
@@ -942,10 +945,11 @@ html {
 
     &:before {
       /* on scroll background */
-      content: '';
+      content: "";
       width: 100%;
       height: 0%;
       background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       opacity: 1;
       display: block;
       position: absolute;
@@ -965,7 +969,7 @@ html {
 
       &:before {
         /* divider line */
-        content: '';
+        content: "";
         width: 100%;
         height: 1px;
         background: #fff;
@@ -1029,7 +1033,7 @@ html {
       width: 100%;
       max-width: calc(1280 / 16 * 1rem);
       /* same height as the cs-ul-wrapper */
-      height: calc(72 / 16 * 1rem);
+      height: calc(88 / 16 * 1rem);
       margin: auto;
       /* prevents padding from affectin gheight */
       box-sizing: border-box;
@@ -1047,7 +1051,8 @@ html {
 
     .cs-logo {
       width: 18.4%;
-      height: calc(40 / 16 * 1rem);
+      // height: calc(40 / 16 * 1rem);
+      height: 4.5rem;
       /* margin-right auto pushes everything away from it to the right */
       margin: 0 auto 0 0;
       padding: 0;
@@ -1160,7 +1165,7 @@ html {
       transition: color 0.3s;
 
       &:before {
-        content: '';
+        content: "";
         width: 0%;
         height: 100%;
         background: #fff;
@@ -1255,11 +1260,11 @@ html {
 
       &:after {
         /* chevron */
-        content: '';
+        content: "";
         width: calc(7 / 16 * 1rem);
         height: calc(12 / 16 * 1rem);
         margin: 0 calc(16 / 16 * 1rem);
-        background: url('https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg');
+        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -1283,7 +1288,7 @@ html {
 
       &:before {
         /* gradient overlay */
-        content: '';
+        content: "";
         width: 100%;
         height: 100%;
         background: #000;
@@ -1297,7 +1302,7 @@ html {
 
       &:after {
         /* gradient overlay */
-        content: '';
+        content: "";
         width: 100%;
         height: 40%;
         background: -webkit-gradient(
@@ -1307,8 +1312,16 @@ html {
           from(rgba(0, 0, 0, 1)),
           to(rgba(0, 0, 0, 0))
         );
-        background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -o-linear-gradient(
+          top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
         position: absolute;
         display: block;
         top: 0;
@@ -1343,8 +1356,16 @@ html {
           from(rgba(0, 0, 0, 1)),
           to(rgba(0, 0, 0, 0))
         );
-        background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -o-linear-gradient(
+          left,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
         opacity: 1;
       }
     }
@@ -1489,7 +1510,7 @@ html {
 
         &:before {
           /* custom list bullet */
-          content: '';
+          content: "";
           width: 3px;
           height: 3px;
           background: currentColor;
@@ -1654,7 +1675,7 @@ html {
 
       &:before {
         /* white border bubble */
-        content: '';
+        content: "";
         width: calc(464 / 16 * 1em);
         height: calc(464 / 16 * 1em);
         background: transparent;
@@ -1674,7 +1695,7 @@ html {
 
       &:after {
         /* orange bubble */
-        content: '';
+        content: "";
         width: calc(366 / 16 * 1em);
         height: calc(366 / 16 * 1em);
         background: var(--primary);
@@ -1773,7 +1794,7 @@ html {
       box-sizing: border-box;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         height: 100%;
         width: 0%;
@@ -1961,7 +1982,7 @@ html {
               position: absolute;
               bottom: calc(-16 / 16 * 1rem);
               left: 0;
-              content: '';
+              content: "";
               opacity: 1;
               display: block;
               background: var(--primary);
@@ -2077,7 +2098,7 @@ html {
                 position: absolute;
                 bottom: calc(-3 / 16 * 1rem);
                 left: 0;
-                content: '';
+                content: "";
                 opacity: 1;
                 display: block;
                 background: var(--primary);

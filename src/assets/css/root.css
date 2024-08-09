@@ -722,13 +722,13 @@ html {
   /* on scroll animations */
   body.scroll #cs-navigation {
     /* translate the whole navigation UP by the exact same height as the cs-top-bar (86px) so we can get that off screen and not have a tall clunky navbar. Then we translate the cs-logo DOWN so it lowers itself to be positioned centered in the cs-container, when it's not. It's just an illusion we create */
-    transform: translateY(-5.375rem);
+    transform: translateY(-7rem);
   }
   body.scroll #cs-navigation:before {
     height: 100%;
   }
   body.scroll #cs-navigation .cs-logo {
-    transform: translateY(5rem);
+    transform: translateY(6.25rem);
   }
   body.scroll #cs-navigation .cs-top-bar:before {
     background-color: rgba(0, 0, 0, 0.4);
@@ -774,6 +774,7 @@ html {
     width: 100%;
     height: 0%;
     background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 1;
     display: block;
     position: absolute;
@@ -849,7 +850,7 @@ html {
     width: 100%;
     max-width: 80rem;
     /* same height as the cs-ul-wrapper */
-    height: 4.5rem;
+    height: 5.5rem;
     margin: auto;
     /* prevents padding from affectin gheight */
     box-sizing: border-box;
@@ -865,7 +866,7 @@ html {
   }
   #cs-navigation .cs-logo {
     width: 18.4%;
-    height: 2.5rem;
+    height: 4.5rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;

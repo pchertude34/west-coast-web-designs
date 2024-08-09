@@ -792,15 +792,18 @@
     }
 
     .cs-topper {
+      width: 100%;
       color: var(--secondary);
     }
 
     .cs-title {
       /* 23 characters wide including spaces */
       max-width: 26ch;
+      width: 100%;
     }
 
     .cs-text {
+      text-align: left;
       margin-bottom: calc(16 / 16 * 1rem);
       &:last-of-type {
         margin-bottom: calc(24 / 16 * 1rem);
