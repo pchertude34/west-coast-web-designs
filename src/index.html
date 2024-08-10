@@ -52,14 +52,21 @@ eleventyNavigation:
         </p>
         <a href="/contact" class="cs-button-solid">Get in touch!</a>
       </div>
-      <img
-      aria-hidden="true"
-      decoding="async"
-      src="/assets/images/undraw_building_websites_i78t.svg"
-      alt="web design"
-      width="570"
-      height="701"
-/>
+      <picture class="cs-picture">
+        <!-- mobile -->
+        <source media="(max-width: 600px)" srcset="/assets/images/undraw_building_websites_i78t.svg" />
+        <!-- tablet -->
+        <source media="(min-width: 601px)" srcset="/assets/images/undraw_building_websites_i78t.svg" />
+        <!-- desktop -->
+         <source media="(min-width: 1024px)" srcset="/assets/images/undraw_building_websites_i78t.svg" />
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/images/undraw_building_websites_i78t.svg"
+          alt="web design"
+          width="570"
+          height="701" />
+      </picture>  
     </div>
     <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
     <svg
@@ -317,8 +324,6 @@ eleventyNavigation:
             <span class="cs-job">Sales / Marketing</span>
           </div>
         </div>
-        <!--Stripe background-->
-        
       </div>
       <div class="cs-content">
         <span class="cs-topper">About Us</span>
