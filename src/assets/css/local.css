@@ -71,7 +71,7 @@
     margin: 0 0 1.5rem 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12, 1fr);
     align-items: center;
     gap: clamp(1rem, 2vw, 1.25rem);
   }
@@ -80,6 +80,7 @@
     height: 100%;
     /* 16px - 24px */
     padding: clamp(1rem, 3vw, 1.5rem);
+    grid-column: span 12;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     background-color: #fff;
@@ -267,8 +268,8 @@
     justify-content: space-between;
     align-items: stretch;
   }
-  #sbs-1362 .cs-card-group {
-    grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
+  #sbs-1362 .cs-item {
+    grid-column: span 6;
   }
   #sbs-1362 .cs-image-group {
     height: auto;
