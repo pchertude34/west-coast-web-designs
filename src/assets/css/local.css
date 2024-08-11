@@ -71,7 +71,7 @@
     margin: 0 0 1.5rem 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
+    grid-template-columns: 1fr;
     align-items: center;
     gap: clamp(1rem, 2vw, 1.25rem);
   }
@@ -266,6 +266,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+  }
+  #sbs-1362 .cs-card-group {
+    grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
   }
   #sbs-1362 .cs-image-group {
     height: auto;
