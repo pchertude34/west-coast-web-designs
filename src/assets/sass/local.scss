@@ -81,7 +81,7 @@
       margin: 0 0 calc(24 / 16 * 1rem) 0;
       padding: 0;
       display: grid;
-      // grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
       align-items: center;
       gap: clamp(1rem, 2vw, 1.25rem);
     }
