@@ -387,11 +387,11 @@ html {
     opacity: 1;
     display: block;
     position: absolute;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     top: 0;
     left: 0;
     z-index: -1;
     transition: height 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   #cs-navigation.cs-active:before {
     height: 150vh;
@@ -401,6 +401,7 @@ html {
     opacity: 1;
     transform: scaleY(1);
     transition-delay: 0.15s;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
   }
   #cs-navigation.cs-active .cs-li {
     opacity: 1;
