@@ -1,8 +1,8 @@
 module.exports = {
     "name": "West Coast Web Designs",
     "email": "wcwd.info@gmail.com",
-    "phoneForTel": "503-956-2541",
-    "phoneFormatted": "(503) 956-2542",
+    "phoneForTel": "503-962-0576",
+    "phoneFormatted": "(503) 962-0576",
     "address": {
         "lineOne": "4889 Tate Ave N",
         "city": "Keizer",
